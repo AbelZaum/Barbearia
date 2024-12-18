@@ -1,0 +1,270 @@
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3a4638;
+    color: #babfba;
+}
+
+header {
+    background-color: #7c847a;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    color: #babfba;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav .nav-button .button {
+    background-color: #3a4638;
+    color: #babfba;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav .nav-button .button:hover {
+    background-color: #848b83;
+}
+
+/* Seção Hero */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #babfba;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content .button {
+    background-color: #3a4638;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #babfba;
+    transition: background-color 0.3s;
+}
+
+.hero-content .button:hover {
+    background-color: #848b83;
+}
+
+/* Seção Serviços */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #7c847a;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #babfba;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #3a4638;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #babfba;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+/* Seção Sobre */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #3a4638;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #babfba;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Seção Contato */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #7c847a;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    text-align: left;
+    color: #babfba;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+form input, form textarea {
+    background-color: #3a4638;
+    color: #babfba;
+}
+
+form button {
+    background-color: #848b83;
+    color: #40443f;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #3a4638;
+}
+
+/* Rodapé */
+footer {
+    background-color: #7c847a;
+    padding: 20px;
+    text-align: center;
+    color: #babfba;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: #babfba;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores, como iPhone 13 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-content .button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+    form {
+        padding: 0 20px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 14px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul li a {
+        font-size: 14px;
+    }
+}

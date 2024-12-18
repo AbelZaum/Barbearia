@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia e Studio de Tattoo Epifania</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="epifania.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="epifania.jpg" alt="Barbearia e Studio de Tattoo Epifania">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-button">
+                <a href="#booking" class="button">Agende Agora</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à Barbearia e Studio de Tattoo Epifania</h1>
+            <p>Onde estilo, arte e tradição se encontram.</p>
+            <a href="#services" class="button">Conheça nossos serviços</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Serviços</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Corte Masculino</h3>
+                <p>O corte clássico ou moderno, como você preferir.</p>
+            </div>
+            <div class="card">
+                <h3>Barba</h3>
+                <p>Design de barba com precisão e estilo.</p>
+            </div>
+            <div class="card">
+                <h3>Tatuagens Personalizadas</h3>
+                <p>Arte exclusiva para marcar momentos especiais.</p>
+            </div>
+            <div class="card">
+                <h3>Pacotes Exclusivos</h3>
+                <p>Combinados de serviços para uma experiência completa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Na Barbearia e Studio de Tattoo Epifania, oferecemos mais do que cortes de cabelo e arte corporal. Nossa missão é proporcionar uma experiência única, unindo conforto, qualidade, criatividade e atendimento personalizado.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form action="submit-form.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Barbearia e Studio de Tattoo Epifania. Todos os direitos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/barbeariaepifania_ink/" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/554792682623" target="_blank">WhatsApp</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
